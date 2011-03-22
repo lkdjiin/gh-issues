@@ -1,0 +1,25 @@
+= gh-issues
+
+Display issues from a GitHub repository in a console window.
+
+Currently, I think about gh-issues only for my personal use.
+
+== Features
+
+Early development stage.
+
+== Documentation
+
+== Dependencies
+
+=== Developper's dependencies
+
+== Install
+
+== License
+GPLv3, see COPYING.
+
+== Questions and/or Comments
+
+Feel free to email {Xavier Nayrac}[mailto:xavier.nayrac@gmail.com]
+with any questions.
