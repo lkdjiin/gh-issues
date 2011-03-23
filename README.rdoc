@@ -4,11 +4,39 @@ Display issues from a GitHub repository in a console window.
 
 Currently, I think about gh-issues only for my personal use.
 
-== Features
+== Usage
 
-Early development stage.
+Go to your local GitHub repository, for example:
 
-== Documentation
+ $ cd gh-issues
+
+Get all issues:
+
+ $ gh-issues get
+ Downloading issues from user:lkdjiin repo:gh-issues
+ 2 - colorize output - Story
+ 1 - command next - 
+ 3 - close an issue - Story
+
+Display the first issue:
+
+  $ gh-issues first
+  2 - colorize output
+  Story
+
+Display by ID:
+
+ $ gh-issues 3
+ 3 - close an issue
+ Story
+ maybe later a 'close' command (need authentication) ?
+
+List them all at any time:
+
+  $ gh-issues all
+  2 - colorize output - Story
+  1 - command next - 
+  3 - close an issue - Story
 
 == Dependencies
 
@@ -16,10 +44,13 @@ Early development stage.
 * json (or json_pure) >= 1.5.1
 * rainbow >= 1.1.1
 
-=== Developper's dependencies
-
 == Install
 
+Download latest release then:
+
+ gem build gh-issues.gempspec
+ gem install gh-issues-xxx.gem
+ 
 == License
 GPLv3, see COPYING.
 
