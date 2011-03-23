@@ -1,18 +1,9 @@
-* use Net::HTTP.get to retrieve issues
+* Main class
 
-* command 'all' to list:
-  + title
-  + labels
-  Moreover this command save the json info (maybe in other format)
+* dependencies in gempspec
 
-* command 'first' (alias 'next') display first issue from saved info:
-  + title
-  + labels
-  + id
-  + body
+* display IDs in the all list
 
-* colorized output (gem rainbow)
+* better format
 
--------------
-
-maybe latter a 'close' command (need authentication) ?
+* install & usage in readme

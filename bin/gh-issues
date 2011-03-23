@@ -21,4 +21,51 @@
 $LOAD_PATH.unshift File.dirname(__FILE__) + '/../lib'
 $GH_ISSUES_PATH = File.expand_path(File.dirname(__FILE__)) + '/..'
 
+require 'net/http'
 require 'gh-issues'
+include GhIssues
+
+def usage
+  puts %q{usage: gh-issues command
+
+where command is:
+  get        download issues
+  all        display all issues
+  first      display first issue
+  an ID      display this issue}
+end
+
+def get
+  github = GitHub.new Dir.pwd
+  puts "Downloading issues from user:#{github.user} repo:#{github.repository}"
+  content = Net::HTTP.get('github.com', "/api/v2/json/issues/list/#{github.user}/#{github.repository}/open")
+  file = File.new(File.join(Dir.pwd, 'gh-issues.json'), "w")
+  file.write content
+  file.close
+  all
+end
+
+def all
+  puts issues.all
+end
+
+def first
+  puts issues.first
+end
+
+def by_id
+  puts issues.by_id(ARGV[0].to_i)
+end
+
+def issues
+  Issues.new(File.join(Dir.pwd, 'gh-issues.json'))
+end
+
+case ARGV[0]
+  when "get" then get
+  when "all" then all
+  when "first" then first
+  when /\d+/ then by_id
+  else
+    usage
+end
