@@ -18,4 +18,5 @@ Gem::Specification.new do |s|
   s.files = FileList['lib/**/*.rb', 'bin/*', '[A-Z]*'].to_a + readmes
 	s.license = 'GPLv3'
 	s.required_ruby_version = '>= 1.9.2'
+  s.add_dependency('json', '>= 1.5.1')
 end
