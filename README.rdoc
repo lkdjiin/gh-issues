@@ -13,7 +13,8 @@ Early development stage.
 == Dependencies
 
 * ruby >= 1.9.2
-* json (or json_pure)
+* json (or json_pure) >= 1.5.1
+* rainbow >= 1.1.1
 
 === Developper's dependencies
 

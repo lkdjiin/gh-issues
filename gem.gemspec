@@ -19,4 +19,5 @@ Gem::Specification.new do |s|
 	s.license = 'GPLv3'
 	s.required_ruby_version = '>= 1.9.2'
   s.add_dependency('json', '>= 1.5.1')
+  s.add_dependency('rainbow', '>= 1.1.1')
 end
