@@ -9,13 +9,13 @@ describe JSON do
   end
   
   it "must return a Hash" do
-    parsed = JSON.parse(@document)
+    parsed = JSON.parse(@document, symbolize_names: true)
     parsed.is_a?(Hash).should be_true
   end
   
   it "must give the title of an issue" do
-    parsed = JSON.parse(@document)
-    parsed['issues'].first['title'].should == "User can add a new set of levels"
+    parsed = JSON.parse(@document, symbolize_names: true)
+    parsed[:issues].first[:title].should == "User can add a new set of levels"
   end
   
 end
