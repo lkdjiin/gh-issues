@@ -44,15 +44,15 @@ def get
   file.close
 end
 
-main = Main.new(Dir.pwd)
+current = Dir.pwd
 
 case ARGV[0]
   when "get"
     get
-    main.all
-  when "all" then main.all
-  when "first" then main.first
-  when /\d+/ then main.by_id(ARGV[0].to_i)
+    Main.new(current).all
+  when "all" then Main.new(current).all
+  when "first" then Main.new(current).first
+  when /\d+/ then Main.new(current).by_id(ARGV[0].to_i)
   else
     usage
 end

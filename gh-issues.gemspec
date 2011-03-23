@@ -16,6 +16,7 @@ Gem::Specification.new do |s|
 		list.exclude('TODO')
 	end.to_a
   s.files = FileList['lib/**/*.rb', 'bin/*', '[A-Z]*'].to_a + readmes
+  s.executables = ['gh-issues']
 	s.license = 'GPLv3'
 	s.required_ruby_version = '>= 1.9.2'
   s.add_dependency('json', '>= 1.5.1')
