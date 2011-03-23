@@ -13,7 +13,7 @@ Early development stage.
 == Dependencies
 
 ruby >= 1.9.2
-json_pure >= 1.5.1
+json (or json_pure)
 
 === Developper's dependencies
 

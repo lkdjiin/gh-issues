@@ -1,7 +1,6 @@
 # -*- encoding: utf-8 -*-
 
 require './spec/helper'
-require 'yaml'
 
 describe GitHub do
 
