@@ -12,6 +12,9 @@ Early development stage.
 
 == Dependencies
 
+ruby >= 1.9.2
+json_pure >= 1.5.1
+
 === Developper's dependencies
 
 == Install

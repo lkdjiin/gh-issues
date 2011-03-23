@@ -1,0 +1,18 @@
+* use Net::HTTP.get to retrieve issues
+
+* command 'all' to list:
+  + title
+  + labels
+  Moreover this command save the json info (maybe in other format)
+
+* command 'first' (alias 'next') display first issue from saved info:
+  + title
+  + labels
+  + id
+  + body
+
+* colorized output (gem rainbow)
+
+-------------
+
+maybe latter a 'close' command (need authentication) ?
