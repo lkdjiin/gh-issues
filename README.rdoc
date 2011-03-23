@@ -12,8 +12,8 @@ Early development stage.
 
 == Dependencies
 
-ruby >= 1.9.2
-json (or json_pure)
+* ruby >= 1.9.2
+* json (or json_pure)
 
 === Developper's dependencies
 

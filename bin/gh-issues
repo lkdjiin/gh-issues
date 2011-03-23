@@ -42,30 +42,17 @@ def get
   file = File.new(File.join(Dir.pwd, 'gh-issues.json'), "w")
   file.write content
   file.close
-  all
 end
 
-def all
-  puts issues.all
-end
-
-def first
-  puts issues.first
-end
-
-def by_id
-  puts issues.by_id(ARGV[0].to_i)
-end
-
-def issues
-  Issues.new(File.join(Dir.pwd, 'gh-issues.json'))
-end
+main = Main.new(Dir.pwd)
 
 case ARGV[0]
-  when "get" then get
-  when "all" then all
-  when "first" then first
-  when /\d+/ then by_id
+  when "get"
+    get
+    main.all
+  when "all" then main.all
+  when "first" then main.first
+  when /\d+/ then main.by_id(ARGV[0].to_i)
   else
     usage
 end

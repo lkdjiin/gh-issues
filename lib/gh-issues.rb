@@ -5,6 +5,7 @@ require 'json'
 require 'gh-issues/github'
 require 'gh-issues/issues'
 require 'gh-issues/issue'
+require 'gh-issues/main'
 
 module GhIssues
 end
