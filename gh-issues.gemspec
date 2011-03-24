@@ -12,7 +12,8 @@ Gem::Specification.new do |s|
   s.description = %q{Display issues from a GitHub repository in a console window.
 Retreive issues with the 'get' command.
 List them with the 'all' command'.
-Display the first one with the 'first' command.}
+Display the first one with the 'first' command.
+Display issue by ID.}
 	
 	readmes = FileList.new('*') do |list|
 		list.exclude(/(^|[^.a-z])[a-z]+/)

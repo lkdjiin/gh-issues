@@ -2,7 +2,18 @@
 
 Display issues from a GitHub repository in a console window.
 
-Currently, I think about gh-issues only for my personal use.
+I wrote gh-issues for my personal use, because I do a lot of stuff on command line and I hate
+to switch too much between applications and/or virtual desktops.
+
+I think gh-issues could be useful for somebody else...
+
+== Features
+
+* Retreive issues and save them locally.
+* List all issues.
+* Display the first issue.
+* Display an issue by ID.
+* Colorized output.
 
 == Usage
 
@@ -43,6 +54,9 @@ List them all at any time:
 * ruby >= 1.9.2
 * json (or json_pure) >= 1.5.1
 * rainbow >= 1.1.1
+
+Windows users should manually install the windows-pr and win32console gems to enable the colorized output:
+ gem install windows-pr win32console
 
 == Install
 
