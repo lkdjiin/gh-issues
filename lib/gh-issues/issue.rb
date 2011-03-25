@@ -11,11 +11,17 @@ module GhIssues
     end
     
     def to_title_and_labels
-      "#{self[:number].to_s.inverse} - #{self[:title].color(:green)} - #{self[:labels].join(' ')}"
+      "#{format_id} #{self[:title].color(:green)} #{self[:labels].join(', ')}"
     end
     
     def to_string
-      "#{self[:number].to_s.inverse} - #{self[:title].color(:green)}\n#{self[:labels].join(' ').background(:white)}\n#{self[:body]}"
+      "#{to_title_and_labels}\n#{self[:body].color(:blue)}"
+    end
+    
+    private
+    
+    def format_id
+      format("%3d", self[:number])
     end
     
   end

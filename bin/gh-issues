@@ -51,7 +51,7 @@ case ARGV[0]
     get
     Main.new(current).all
   when "all" then Main.new(current).all
-  when "first" then Main.new(current).first
+  when "first", "next" then Main.new(current).first
   when /\d+/ then Main.new(current).by_id(ARGV[0].to_i)
   else
     usage

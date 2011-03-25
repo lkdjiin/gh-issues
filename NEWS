@@ -1,3 +1,9 @@
+v0.1.2  2011-03-??
+
+  * Nicer output.
+  * 'next' is an alias for the 'first' command.
+  
+
 v0.1.1  2011-03-24
 
   * Retreive issues and save them locally.

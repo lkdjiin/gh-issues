@@ -1,24 +1,3 @@
 
-* formattage des IDs, sur 3 chars:
-123 - titre a
- 25 - titre b
-456 - titre c
-  7 - titre d
-
-* formattage des labels
-  Je simule la couleur avec des +
-  Pour l'instant on a ça: 123 - titre - +label 1 label 2+
-  Je veux ça:             123 - titre +label 1+ +label 2+
-
-* formattage longueur des lignes de titre. 
-  Vérifier qu'une ligne de titre (ID + titre + labels) ne dépasse pas 80 chars.
-  
-* formattage d'une issue:
-
-title: blablabla
-id: 123
-labels: l1, l2
-body: blablablabla
-blablablabla
 
 * push to rubygem
