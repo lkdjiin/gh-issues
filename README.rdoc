@@ -15,21 +15,25 @@ I think gh-issues could be useful for somebody else...
 * Display an issue by ID.
 * Colorized output.
 
+== Install
+
+ gem install gh-issues
+ 
 == Usage
 
-Go to your local GitHub repository, for example:
+Go to your local GitHub repository:
 
- $ cd gh-issues
+ $ cd my_repo
 
 Get all issues:
 
  $ gh-issues get
- Downloading issues from user:lkdjiin repo:gh-issues
+ Downloading issues from user:lkdjiin repo:my_repo
  2 - colorize output - Story
  1 - command next - 
  3 - close an issue - Story
 
-Display the first issue:
+Display the first issue (next is an alias for first):
 
   $ gh-issues first
   2 - colorize output
@@ -58,9 +62,6 @@ List them all at any time:
 Windows users should manually install the windows-pr and win32console gems to enable the colorized output:
  gem install windows-pr win32console
 
-== Install
-
- gem install gh-issues
  
 == License
 GPLv3, see COPYING.
