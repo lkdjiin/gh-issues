@@ -60,10 +60,7 @@ Windows users should manually install the windows-pr and win32console gems to en
 
 == Install
 
-Download latest release then:
-
- gem build gh-issues.gempspec
- gem install gh-issues-xxx.gem
+ gem install gh-issues
  
 == License
 GPLv3, see COPYING.
