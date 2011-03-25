@@ -32,6 +32,7 @@ where command is:
   get        download issues
   all        display all issues
   first      display first issue
+  next       alias to first
   an ID      display this issue}
 end
 
